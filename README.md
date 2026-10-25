@@ -168,13 +168,13 @@ $$\text{Net Savings} = \sum_{i \in \text{TP}} \text{Amount}_i - \sum_{j \in \tex
 
 ## ⚡ Hardware & GPU Acceleration Pipeline
 
-- **GPU Device:** **NVIDIA GeForce RTX 5050 Laptop GPU**
-- **Architecture:** NVIDIA Blackwell (Compute Capability 12.0 / sm_120)
-- **Dedicated VRAM:** 8,151 MiB (~8.15 GB)
+- **GPU Device:** **NVIDIA GeForce RTX 3050 Laptop GPU**
+- **Architecture:** NVIDIA Ampere (Compute Capability 8.6 / sm_86)
+- **Dedicated VRAM:** 4,096 MiB (~4.00 GB)
 - **Driver Version:** 617.42 | CUDA UMD Version: 13.4
 - **How Acceleration is Managed:**
-  1. [`src/utils/gpu_utils.py`](file:///d:/CCML/src/utils/gpu_utils.py) runs active capability probing to detect CUDA devices.
-  2. XGBoost compiles and runs its histogram gradient boosting kernels directly on the RTX 5050 GPU via CUDA (`device='cuda'`).
+  1. [`src/utils/gpu_utils.py`](src/utils/gpu_utils.py) runs active capability probing to detect CUDA devices.
+  2. XGBoost compiles and runs its histogram gradient boosting kernels directly on the RTX 3050 GPU via CUDA (`device='cuda'`).
   3. PyTorch utilizes pinned memory (`pin_memory=True`) in DataLoaders for asynchronous host-to-device transfers, paired with AVX/multithreaded tensor operations.
 
 ---
