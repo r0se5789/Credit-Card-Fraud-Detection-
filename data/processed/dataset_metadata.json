@@ -1,0 +1,69 @@
+{
+  "total_transactions": 284807,
+  "normal_transactions": 284315,
+  "fraud_transactions": 492,
+  "fraud_percentage": 0.1727,
+  "imbalance_ratio": "1:577",
+  "time_range_seconds": [
+    0.0,
+    172792.0
+  ],
+  "amount_summary": {
+    "min": 0.0,
+    "max": 25691.16,
+    "mean": 88.35,
+    "median": 22.0,
+    "fraud_mean_amount": 122.21,
+    "normal_mean_amount": 88.29
+  },
+  "split_summary": {
+    "split_method": "seq",
+    "train": {
+      "samples": 199364,
+      "frauds": 384,
+      "fraud_rate": 0.1926
+    },
+    "val": {
+      "samples": 28481,
+      "frauds": 33,
+      "fraud_rate": 0.1159
+    },
+    "test": {
+      "samples": 56962,
+      "frauds": 75,
+      "fraud_rate": 0.1317
+    },
+    "feature_cols": [
+      "V1",
+      "V2",
+      "V3",
+      "V4",
+      "V5",
+      "V6",
+      "V7",
+      "V8",
+      "V9",
+      "V10",
+      "V11",
+      "V12",
+      "V13",
+      "V14",
+      "V15",
+      "V16",
+      "V17",
+      "V18",
+      "V19",
+      "V20",
+      "V21",
+      "V22",
+      "V23",
+      "V24",
+      "V25",
+      "V26",
+      "V27",
+      "V28",
+      "scaled_amount",
+      "scaled_time"
+    ]
+  }
+}

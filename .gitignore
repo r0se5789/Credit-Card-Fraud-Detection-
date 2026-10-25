@@ -1,0 +1,21 @@
+# Virtual Environment
+.venv/
+venv/
+ENV/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+
+# Raw & Processed Datasets (large files > 100MB rejected by GitHub)
+data/raw/*.csv
+data/raw/*.tmp
+data/processed/*.parquet
+
+# Logs & System Files
+*.log
+reports/*.log
+.DS_Store
+Thumbs.db

@@ -1,0 +1,142 @@
+[
+  {
+    "model_name": "BigQuery Baseline (LogReg)",
+    "roc_auc": 0.98316,
+    "pr_auc": 0.7384,
+    "optimal_threshold": 1.0,
+    "metrics_at_optimal_threshold": {
+      "f1_score": 0.7846,
+      "precision": 0.9273,
+      "recall": 0.68,
+      "true_positives": 51,
+      "false_positives": 4,
+      "false_negatives": 24,
+      "true_negatives": 56883
+    },
+    "metrics_at_default_threshold_0_5": {
+      "f1_score": 0.1144,
+      "precision": 0.0612,
+      "recall": 0.88,
+      "true_positives": 66,
+      "false_positives": 1013,
+      "false_negatives": 9,
+      "true_negatives": 55874
+    },
+    "cost_sensitive_analysis": {
+      "total_fraud_exposure_usd": 7729.26,
+      "fraud_prevented_usd": 4714.29,
+      "fraud_missed_usd": 3014.97,
+      "investigation_overhead_usd": 40.0,
+      "net_financial_savings_usd": 4674.29,
+      "savings_percentage": 60.48
+    },
+    "top_k_alert_precision": {
+      "top_200_alerts": "63/200 frauds detected (31.5%)"
+    }
+  },
+  {
+    "model_name": "XGBoost (GPU)",
+    "roc_auc": 0.98413,
+    "pr_auc": 0.80423,
+    "optimal_threshold": 0.9659,
+    "metrics_at_optimal_threshold": {
+      "f1_score": 0.8281,
+      "precision": 1.0,
+      "recall": 0.7067,
+      "true_positives": 53,
+      "false_positives": 0,
+      "false_negatives": 22,
+      "true_negatives": 56887
+    },
+    "metrics_at_default_threshold_0_5": {
+      "f1_score": 0.8058,
+      "precision": 0.875,
+      "recall": 0.7467,
+      "true_positives": 56,
+      "false_positives": 8,
+      "false_negatives": 19,
+      "true_negatives": 56879
+    },
+    "cost_sensitive_analysis": {
+      "total_fraud_exposure_usd": 7729.26,
+      "fraud_prevented_usd": 3845.1,
+      "fraud_missed_usd": 3884.16,
+      "investigation_overhead_usd": 0.0,
+      "net_financial_savings_usd": 3845.1,
+      "savings_percentage": 49.75
+    },
+    "top_k_alert_precision": {
+      "top_200_alerts": "62/200 frauds detected (31.0%)"
+    }
+  },
+  {
+    "model_name": "FraudNet (Deep MLP)",
+    "roc_auc": 0.97287,
+    "pr_auc": 0.80941,
+    "optimal_threshold": 0.3926,
+    "metrics_at_optimal_threshold": {
+      "f1_score": 0.8296,
+      "precision": 0.9333,
+      "recall": 0.7467,
+      "true_positives": 56,
+      "false_positives": 4,
+      "false_negatives": 19,
+      "true_negatives": 56883
+    },
+    "metrics_at_default_threshold_0_5": {
+      "f1_score": 0.8182,
+      "precision": 0.9474,
+      "recall": 0.72,
+      "true_positives": 54,
+      "false_positives": 3,
+      "false_negatives": 21,
+      "true_negatives": 56884
+    },
+    "cost_sensitive_analysis": {
+      "total_fraud_exposure_usd": 7729.26,
+      "fraud_prevented_usd": 5089.99,
+      "fraud_missed_usd": 2639.27,
+      "investigation_overhead_usd": 40.0,
+      "net_financial_savings_usd": 5049.99,
+      "savings_percentage": 65.34
+    },
+    "top_k_alert_precision": {
+      "top_200_alerts": "63/200 frauds detected (31.5%)"
+    }
+  },
+  {
+    "model_name": "Autoencoder (Anomaly Detection)",
+    "roc_auc": 0.93914,
+    "pr_auc": 0.23601,
+    "optimal_threshold": 0.0213,
+    "metrics_at_optimal_threshold": {
+      "f1_score": 0.422,
+      "precision": 0.3217,
+      "recall": 0.6133,
+      "true_positives": 46,
+      "false_positives": 97,
+      "false_negatives": 29,
+      "true_negatives": 56790
+    },
+    "metrics_at_default_threshold_0_5": {
+      "f1_score": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "true_positives": 0,
+      "false_positives": 1,
+      "false_negatives": 75,
+      "true_negatives": 56886
+    },
+    "cost_sensitive_analysis": {
+      "total_fraud_exposure_usd": 7729.26,
+      "fraud_prevented_usd": 4152.48,
+      "fraud_missed_usd": 3576.78,
+      "investigation_overhead_usd": 970.0,
+      "net_financial_savings_usd": 3182.48,
+      "savings_percentage": 41.17
+    },
+    "top_k_alert_precision": {
+      "top_200_alerts": "51/200 frauds detected (25.5%)"
+    }
+  }
+]
