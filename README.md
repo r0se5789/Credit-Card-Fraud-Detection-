@@ -33,7 +33,7 @@ This project replicates, benchmarks, and enhances the Google Cloud BigQuery ML f
 ## 🚀 Executive Summary & Key Results
 
 - **Dataset:** 284,807 European cardholder transactions; 492 frauds (**0.172%** positive class).
-- **GPU Acceleration:** NVIDIA GeForce RTX 5050 Laptop GPU (8.15 GB VRAM) executing histogram tree building on CUDA.
+- **GPU Acceleration:** NVIDIA GeForce RTX 3050 Laptop GPU (4.00 GB VRAM) executing histogram tree building on CUDA.
 - **Top Classifier:** **GPU XGBoost** achieved **100% Precision (0 False Alarms)** on the test set while catching **53 out of 75 frauds**.
 - **Highest Financial Savings:** **FraudNet (Deep MLP)** prevented **$5,014.33** in fraud losses with only 1 false alarm (64.87% net savings).
 - **BigQuery ML Test (`Time = 85285.0`):** **100% classification accuracy** across all sample fraudulent and legitimate transactions.
